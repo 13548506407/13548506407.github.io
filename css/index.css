@@ -1,0 +1,360 @@
+        * {
+            margin: 0px auto;
+        }
+
+        body {
+            margin-top: 10px;
+            background-color: #999;
+        }
+
+        #box {
+            width: 280px;
+            height: 480px;
+            border: 7px solid #DCD8BA;
+            border-radius: 6%;
+            position: relative;
+            background-color: #fff;
+            padding: 60px 10px;
+        }
+
+        .content {
+            width: 280px;
+            height: 480px;
+            background-color: #000;
+            position: absolute;
+            top: 50px;
+            left: 10px;
+        }
+
+        .light {
+            width: 260px;
+            height: 10px;
+            padding: 20px 20px;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            text-align: center;
+        }
+
+        .light p {
+            font-size: 18px;
+            font-weight: 900;
+            font-family: "黑体";
+            position: absolute;
+            top: 5px;
+            left: 120px;
+            color: #A3935C;
+        }
+
+        .light b {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #000;
+            position: absolute;
+            top: 7px;
+            left: 80px;
+        }
+
+        .light i {
+            width: 30px;
+            height: 15px;
+            border-radius: 10px;
+            background-color: #000;
+            position: absolute;
+            top: 7px;
+            left: 200px;
+        }
+
+        .light p span {
+            width: 5px;
+            height: 5px;
+            font-size: 5px;
+        }
+
+        .listen {
+            width: 130px;
+            height: 7px;
+            background-color: #999999;
+            border-radius: 5px;
+        }
+
+        .listen1 {
+            position: absolute;
+            top: -10px;
+            left: 85px;
+        }
+
+        .listen2 {
+            position: absolute;
+            bottom: -10px;
+            left: 85px;
+        }
+
+        #box:before {
+            width: 7px;
+            height: 25px;
+            background-color: #DBD7CA;
+            border-radius: 4px;
+            content: "";
+            position: absolute;
+            top: 200px;
+            right: -12px;
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        }
+
+        #box:after {
+            width: 7px;
+            height: 70px;
+            background-color: #DBD7CA;
+            border-radius: 4px;
+            content: "";
+            position: absolute;
+            top: 270px;
+            right: -12px;
+            box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        #content_top {
+            position: relative;
+            height: 20px;
+            margin: 0;
+        }
+
+        #content_top .xinhao {
+            position: relative;
+            height: 15px;
+            margin: 0;
+            top: 0px;
+            left: 5px;
+            width: 30px;
+            float: left;
+        }
+
+        #content_top .xinhao span {
+            width: 3px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #content_top .xinhao .spanone {
+            height: 5px;
+            background-color: #fff;
+            float: left;
+            left: 0px;
+        }
+
+        #content_top .xinhao .spantwo {
+            height: 7px;
+            background-color: #fff;
+            float: left;
+            left: 5px;
+        }
+
+        #content_top .xinhao .spanthree {
+            height: 9px;
+            background-color: #fff;
+            float: left;
+            left: 10px;
+        }
+
+        #content_top .xinhao .spanfour {
+            height: 11px;
+            background-color: #fff;
+            float: left;
+            left: 15px;
+        }
+
+        #content_top .operator {
+            color: #fff;
+            float: left;
+            font-size: 13px;
+        }
+
+        #content_top .dianchi {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            width: 20px;
+            height: 10px;
+            border: 1px solid #fff;
+        }
+
+        #content_top .dianchi .dianliang {
+            width: 12px;
+            height: 6px;
+            background-color: #fff;
+            position: absolute;
+            top: 2px;
+            left: 1px;
+        }
+
+        #content_top .dianchi .dianchitou {
+            width: 4px;
+            height: 7px;
+            background-color: #fff;
+            position: absolute;
+            right: -4px;
+            top: 1px;
+        }
+
+        #content_top .dianchi .restdian {
+            color: #fff;
+            font-size: 13px;
+            position: absolute;
+            left: -30px;
+            top: -4px;
+        }
+
+        #content_top .suoping {
+            height: 15px;
+            width: 15px;
+            position: relative;
+        }
+
+        #content_top .suoping .huxing {
+            height: 5px;
+            width: 4px;
+            border-radius: 40%;
+            border: 1px solid #fff;
+            position: absolute;
+            left: 1px;
+            top: 5px;
+        }
+
+        #content_top .suoping .fangxing {
+            height: 6px;
+            width: 8px;
+            background-color: #fff;
+            position: absolute;
+            top: 9px;
+            left: 0px;
+        }
+
+        #time {
+            position: relative;
+            width: 160px;
+            height: 50px;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+
+        #love {
+            position: relative;
+            width: 100%;
+            height: 310px;
+            /*display: none;*/
+        }
+
+        #love p {
+            color: #fff;
+            text-align: center;
+        }
+
+        #love .fang {
+            width: 101px;
+            height: 101px;
+            background-color: red;
+            position: absolute;
+            top: 98px;
+            left: 50%;
+            margin-left: -50px;
+            transform: rotate(45deg);
+            border-bottom-right-radius: 5%;
+            border-top-right-radius: 15%;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 15%;
+            z-index: 2;
+            box-shadow: 0px 0px 10px 10px red;
+            animation: jump 0.8s infinite;
+        }
+
+        #love .yuan1 {
+            width: 101px;
+            height: 101px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+            top: 60px;
+            box-shadow: 0px 0px 10px 8px red;
+            animation: jump 0.8s infinite;
+            z-index: 2;
+        }
+
+        #love .yuan2 {
+            width: 101px;
+            height: 101px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            top: 60px;
+            box-shadow: 0px 0px 10px 8px red;
+            animation: jump 0.8s infinite;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: rotate(45deg) scale(1);
+            }
+            15% {
+                transform: rotate(45deg) scale(0.97);
+            }
+            25% {
+                transform: rotate(45deg) scale(0.95);
+            }
+            35% {
+                transform: rotate(45deg) scale(0.97);
+            }
+            50% {
+                transform: rotate(45deg) scale(1);
+            }
+            65% {
+                transform: rotate(45deg) scale(1.03);
+            }
+            75% {
+                transform: rotate(45deg) scale(1.05);
+            }
+            85% {
+                transform: rotate(45deg) scale(1.03);
+            }
+            100% {
+                transform: rotate(45deg) scale(1);
+            }
+        }
+
+        #love p.ptwo {
+            position: absolute;
+            bottom: 20px;
+            left: 52%;
+            transform: translate(-50%);
+            letter-spacing: 4px;
+        }
+
+        #love .jian {
+            position: absolute;
+            width: 250px;
+            height: 5px;
+            background-color: #C8BDAC;
+            transform: rotate(-20deg);
+            top: 120px;
+            left: 10px;
+        }
+
+        #love .huoyan {
+            z-index: 100;
+        }
+
+        canvas {
+            position: absolute;
+            right: -5px;
+            top: 9px;
+        }

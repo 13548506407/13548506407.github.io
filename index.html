@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>乾乾的手机</title>
+</head>
+<link rel="stylesheet" type="text/css" href="./css/index.css" />
+<script type="text/javascript" src="./js/jquery-v3.2.1.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+<body>
+    <div id="box">
+        <div class="light"><b></b>
+            <p>S<span> </span>O<span> </span>N<span> </span>Y</p><i></i></div>
+        <div class="listen1 listen"></div>
+        <div class="listen2 listen"></div>
+        <div class="content">
+            <div id="content_top">
+                <div class="xinhao">
+                    <span class="spanone"></span>
+                    <span class="spantwo"></span>
+                    <span class="spanthree"></span>
+                    <span class="spanfour"></span>
+                </div>
+                <div class="operator">中国移动 4G</div>
+                <div class="dianchi">
+                    <div class="dianliang"></div>
+                    <div class="dianchitou"></div>
+                    <p class="restdian">60%</p>
+                </div>
+                <div class="suoping">
+                    <div class="huxing"></div>
+                    <div class="fangxing"></div>
+                </div>
+            </div>
+            <div id="time">
+
+            </div>
+            <div id="love">
+                <div class="duoyan">
+                    <canvas id="surface"></canvas>
+                </div>
+                <p class="pone">Make My Heart <br>&nbsp; Peng Peng Peng!</p>
+                <div class="fang"></div>
+                <div class="yuan1"></div>
+                <div class="yuan2"></div>
+                <div class="jian"></div>
+                <p class="ptwo">I LOVE YOU</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript">
+    // 时间的代码
+    var time = document.querySelector("#time")
+
+    function getDate(date) {
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        month = month < 10 ? "0" + month : month;
+        day = day < 10 ? "0" + day : day;
+        h = h < 10 ? "0" + h : h;
+        m = m < 10 ? "0" + m : m;
+        s = s < 10 ? "0" + s : s;
+        return year + "-" + month + "-" + day + " " + h + ":" + m + ":" + s;
+    }
+    setInterval(function () {
+        var b = new Date()
+        time.innerHTML = getDate(b)
+    }, 1000);
+</script>
